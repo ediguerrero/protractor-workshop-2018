@@ -10,7 +10,7 @@
     "test:headless": "npm run build && protractor dist/protractor/headless.config.js",
     "jasmine":"npm install jasmine-spec-reporter", 
     "test": "npm run test:headless",
-    "postinstall":"webdriver-manager update --gecko false"
+    "postinstall":"npx webdriver-manager update --gecko false"
   },
   "keywords": [
     "ui-testing",
