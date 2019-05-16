@@ -9,7 +9,8 @@
     "test:local": "npm run build && protractor dist/protractor/local.config.js",
     "test:headless": "npm run build && protractor dist/protractor/headless.config.js",
     "test": "npm run test:headless",
-    "postinstall":"npx webdriver-manager update --gecko false"
+    "postinstall":"npx webdriver-manager update --gecko false",
+    "lint": "tslint --project tsconfig.json protractor/**/*.ts test/**/*.ts src/**/*.ts"
   },
   "keywords": [
     "ui-testing",
@@ -21,11 +22,14 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jasminewd2": "^2.0.6",
-    "typescript": "^3.4.5"
+    "typescript": "^3.4.5",
+    "tslint": "^5.16.0",
+    "tslint-config-airbnb":"^5.11.1"
   },
   "dependencies": {
     "jasmine-spec-reporter": "^4.2.1",
     "@types/node": "^12.0.0",
     "protractor": "^5.4.2"
+    
   }
 }
