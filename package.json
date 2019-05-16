@@ -8,7 +8,6 @@
     "build": "npm run clean && tsc",
     "test:local": "npm run build && protractor dist/protractor/local.config.js",
     "test:headless": "npm run build && protractor dist/protractor/headless.config.js",
-    "jasmine":"npm install jasmine-spec-reporter", 
     "test": "npm run test:headless",
     "postinstall":"npx webdriver-manager update --gecko false"
   },
@@ -25,6 +24,7 @@
     "typescript": "^3.4.5"
   },
   "dependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
     "@types/node": "^12.0.0",
     "protractor": "^5.4.2"
   }
